@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="mortgage.css">
+  <script defer src="mortgage.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Left Side -->
+    <div class="calculator">
+
+        <div class="title">
+            <h2>Mortgage Calculator</h2>
+            <a href="#" id="clear">Clear All</a>
+        </div>
+
+        <label>Mortgage Amount</label>
+        <div class="input-group">
+            <span>£</span>
+            <input type="number" id="amount" value="300000">
+        </div>
+
+        <div class="row">
+
+            <div>
+                <label>Mortgage Term</label>
+                <div class="input-group">
+                    <input type="number" id="years" value="25">
+                    <span>years</span>
+                </div>
+            </div>
+
+            <div>
+                <label>Interest Rate</label>
+                <div class="input-group">
+                    <input type="number" id="rate" value="5.25">
+                    <span>%</span>
+                </div>
+            </div>
+
+        </div>
+
+        <label>Mortgage Type</label>
+
+        <div class="radio active">
+            <input type="radio" name="type" checked>
+            <span>Repayment</span>
+        </div>
+
+        <div class="radio">
+            <input type="radio" name="type">
+            <span id="intrest-only">Interest Only</span>
+        </div>
+
+        <button id="calculateBtn" class="btn">Calculate Repayments</button>
+
+    </div>
+
+
+    <!-- Right Side -->
+    <div class="results">
+
+        <h3>Your results</h3>
+
+        <p>
+            Your results are shown below based on the information you provided.
+            To adjust the results, edit the form and click “calculate repayments” again.
+        </p>
+
+        <div class="result-box">
+
+            <small>Your monthly repayments</small>
+
+            <h1 class="cleared" id="monthly-repayments">£1,797.74</h1>
+
+            <hr>
+
+            <p>Total you'll repay over the term</p>
+
+            <h3 class="cleared" id="total-repayment">£539,322.94</h3>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
